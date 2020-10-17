@@ -1,0 +1,29 @@
+.userList li {
+  list-style: none;
+  transition: 0.2s ease;
+}
+
+.userList li:hover {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .float {
+    animation: float 1 2s linear;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateX(-4vh);
+    opacity: 0%;
+    color: white;
+  }
+  50% {
+    transform: translateX(-2vh);
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}
